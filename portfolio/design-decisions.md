@@ -39,7 +39,58 @@
 
 ## Information Architecture Choices:
 
-![Information Architecture image of the API documentation.](../images/information-architecture.png)
+
+```bash
+Tech Debt Tracker API Documentation
+│
+├── 1. Overview
+│   ├── Key Features
+│   └── Who is this for
+│
+├── 2. Quick Visual
+│   └── Scoreboard preview
+│
+├── 3. How It Works
+│   ├── Step 1: Log a Debt Entry
+│   ├── Step 2: Track Automatically
+│   └── Step 3: Watch Scoreboard
+│
+├── 4. Getting Started
+│   ├── Requirements
+│   ├── Authentication
+│   └── Example request
+│
+├── 5. API Reference
+│   ├── Create Debt (POST /v1/debts)
+│   │   ├── Parameters
+│   │   ├── Example request
+│   │   ├── Response
+│   │   └── Error
+│   │
+│   ├── List Debts (GET /v1/debts)
+│   │   ├── Query parameters
+│   │   ├── Example request
+│   │   └── Response
+│   │
+│   ├── Update Debt (PUT /v1/debts/{id})
+│   │   ├── Example request
+│   │   └── Response
+│   │
+│   └── Scoreboard
+│       ├── Global (GET /v1/scoreboard/global)
+│       └── Recent Fixes (GET /v1/scoreboard/recent-fixes)
+│
+├── 6. Troubleshooting
+│   ├── 401 Unauthorized
+│   └── 400 Bad Request
+│
+└── 7. FAQ
+    ├── How is estimate growth calculated?
+    ├── Can I delete a debt entry?
+    ├── Severity levels explained
+    ├── Rate limits
+    └── Exporting data
+```
 
 ## Accessibility Considerations
 
