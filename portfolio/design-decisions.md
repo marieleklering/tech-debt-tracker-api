@@ -91,6 +91,8 @@ Tech Debt Tracker API Documentation
     ├── Rate limits
     └── Exporting data
 ```
+Link to image diagram here.
+[Diagram for information architecture](../images/information-architecture.png)
 
 ## Accessibility Considerations
 
