@@ -176,10 +176,9 @@ curl -X POST https://api.techdebttracker.io/v1/debts \
   }'
 ```
 
-**Response:**
+**Response:** 🟢 `201 Created`
 
 ```
-Response: 201 Created
 {
 
 "id": "debt_abc123",
@@ -205,7 +204,7 @@ Response: 201 Created
 }
 ```
 
-**Error:**
+**Error:** 🔴 `401 Unauthorized`
 
 ```
 {
@@ -242,7 +241,7 @@ Query parameters
 GET /v1/debts?severity=4&team=backend-team
 ```
 
-**Response:**
+**Response:** 🟢 `200 OK`
 
 ```json
 
@@ -293,7 +292,16 @@ GET /v1/debts?severity=4&team=backend-team
 }
 ```
 
-Error:
+**Error:** 🔴 `404 Not Found`
+
+```json
+{
+  "error": {
+    "code": "NO_DEBTS_FOUND",
+    "message": "No debt entries match the specified filters"
+  }
+}
+```
 
 ### **Update Debt Management API:**
 
@@ -326,34 +334,30 @@ Content-Type: application/json
 }
 ```
 
-**Response:**
+**Response:** 🟢 `200 OK`
 
-```bash
+```json
 {
-
-"id": "debt_abc123",
-
-"title": "Replace deprecated AuthLib",
-
-"status": "resolved",
-
-"resolved_at": "2026-01-21T12:00:00Z",
-
-"resolved_by": "@sarah-k",
-
-"original_estimate": 80,
-
-"final_estimate": 85,
-
-"age_in_days": 5
-
+  "id": "debt_abc123",
+  "title": "Replace deprecated AuthLib",
+  "status": "resolved",
+  "resolved_at": "2026-01-21T12:00:00Z",
+  "resolved_by": "@sarah-k",
+  "original_estimate": 80,
+  "final_estimate": 85,
+  "age_in_days": 5
 }
 ```
 
-Error
+**Error:** 🔴 `404 Not Found`
 
-```bash
-
+```json
+{
+  "error": {
+    "code": "DEBT_NOT_FOUND",
+    "message": "No debt entry found with the specified ID"
+  }
+}
 ```
 
 ### **List Scoreboard API:**
@@ -369,10 +373,9 @@ curl https://api.techdebttracker.io/v1/scoreboard/global \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
-**Response:**
+**Response:** 🟢 `200 OK`
 
-```bash
-Response: 200 OK
+```json
 {
   "overview": {
     "total_debt_hours": 1247,
@@ -381,6 +384,16 @@ Response: 200 OK
   },
   "biggest_debts": [...],
   "recently_resolved": [...]
+}
+```
+**Error:** 🔴 `401 Unauthorized`
+
+```json
+{
+  "error": {
+    "code": "INVALID_API_KEY",
+    "message": "The API key provided is invalid or has expired"
+  }
 }
 ```
 
@@ -395,10 +408,9 @@ curl https://api.techdebttracker.io/v1/scoreboard/recent-fixes \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
-**Response:**
+**Response:** 🟢 `200 OK`
 
-```bash
-Response: 200 OK
+```json
 {
   "recent_fixes": [
     {
@@ -416,13 +428,25 @@ Response: 200 OK
       "created_at": "2025-10-22T10:00:00Z",
       "days_ago": 2
     }
+  ]
+}
+```
+**Error:** 🔴 `401 Unauthorized`
+
+```json
+{
+  "error": {
+    "code": "INVALID_API_KEY",
+    "message": "The API key provided is invalid or has expired"
+  }
+}
 ```
 
 ## Troubleshooting
 
 We will look at the main errors you can get when using the Technical Debt Scoreboard API and how to solve it.
 
-### 401 Unauthorized - Invalid API Key
+### 🔴 `401 Unauthorized` - Invalid API Key
 
 **Error:**
 
@@ -441,7 +465,7 @@ We will look at the main errors you can get when using the Technical Debt Scoreb
 - Ensure you're using "Bearer YOUR_API_KEY" format
 - Verify key hasn't expired in your dashboard
 
-### 400 Bad Request - Missing Parameter
+### 🔴 `400 Bad Request` - Missing Parameter
 
 **Error:**
 
@@ -459,6 +483,44 @@ We will look at the main errors you can get when using the Technical Debt Scoreb
 
 - Include all required fields: title, severity, estimated_fix_time
 - Check JSON formatting is correct
+
+### 🔴 `404 Not Found` - Debt Not Found
+
+**Error:**
+
+```json
+{
+  "error": {
+    "code": "DEBT_NOT_FOUND",
+    "message": "No debt entry found with the specified ID"
+  }
+}
+```
+
+**Solution:**
+
+- Verify the debt ID exists using GET /v1/debts
+- Check for typos in the ID (IDs are case-sensitive)
+
+### 🔴 `429 Too Many Requests` - Rate Limited
+
+**Error:**
+
+```json
+{
+  "error": {
+    "code": "RATE_LIMITED",
+    "message": "Too many requests. Please wait before retrying.",
+    "retry_after": 60
+  }
+}
+```
+
+**Solution:**
+
+- Wait for the time specified in `retry_after` (seconds)
+- Implement exponential backoff in your integration
+- Consider upgrading your plan for higher rate limits
 
 ## FAQ
 
