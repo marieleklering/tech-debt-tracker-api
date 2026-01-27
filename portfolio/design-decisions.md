@@ -31,7 +31,7 @@
 | curl examples only | Works for all developers regardless of language | Universal compatibility |
 
 
-## Goals, signals and measures**
+## Goals, signals and measures
 
 | **Goal** | **Measure** | **Measure** |
 | --- | --- | --- |
