@@ -1,7 +1,7 @@
 # tech-debt-tracker-api-docs
 
 ## Tech Debt Tracker API Documentation
-API documentation for the Tech Debt Tracker—a tool that helps development teams log, measure, and monitor technical debt.
+API documentation for the Tech Debt Tracker which is a tool that helps development teams log, measure, and monitor technical debt.
 
 View the docs
 link here
