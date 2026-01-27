@@ -33,3 +33,20 @@ FAQ
 - Markdown
 - GitHub Pages
 - Miro
+
+## Run locally
+
+```bash
+git clone https://github.com/yourusername/tech-debt-tracker-docs.git
+cd tech-debt-tracker-docs
+
+# If using Jekyll
+bundle install
+bundle exec jekyll serve
+
+# Then open http://localhost:4000
+```
+
+## Author
+
+**[Mariele Klering]** – Technical Writer
