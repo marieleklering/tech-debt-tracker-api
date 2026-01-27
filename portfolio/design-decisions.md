@@ -151,6 +151,7 @@ The API workflow step-by-step is documented in the diagram below:
 | v1.0 → v1.1 | Added Quick Visual section | Users benefit from seeing overview first |
 | v1.1 → v1.2 | Expanded auth troubleshooting | Auth errors are common API pain points |
 | v1.2 → v2.0 | Standardised endpoint structure | Consistency helps learning |
+| v2.0 → v2.1 | Added colour to code responses | Helps identify easily errors and successes |
 
 **Planned for v2.1:**
 - Add 404 and 429 error docs
