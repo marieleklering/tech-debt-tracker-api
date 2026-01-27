@@ -1,6 +1,6 @@
 # Context and Design Decisions
 
-*This section documents the research and key findings for the Tech Debt Tracker API and why it was chosen.*
+*This section documents the content design decisions for portfolio review purposes.*
 
 ## Research foundation:
 
@@ -111,3 +111,27 @@ This section documents the accessibility considerations when deciding the docume
 ![Journey Map for Developer Onboarding image of the API documentation.](../images/journey-map.png)
 
 ## API Workflow
+placeholder
+
+
+## Voice Principles
+
+| Principle | Application |
+| --- | --- |
+| **Direct** | Lead with the action: "Use POST /v1/debts to create..." not "You can create a debt by using..." |
+| **Confident** | State facts without hedging: "The API returns..." not "The API should return..." |
+| **Technically precise** | Use correct terminology: "endpoint" not "link", "parameter" not "field" (in query strings) |
+| **Helpful** | Anticipate problems: Every error shows a solution, not just the error code |
+
+## Tone Variations
+
+| Context | Tone | Example |
+| --- | --- | --- |
+| Getting Started | Encouraging | "Execute the command below to see the scoreboard" |
+| API Reference | Neutral, precise | "Returns a JSON object containing..." |
+| Troubleshooting | Supportive | "Check that your API key is correct" |
+| Errors | Clear, actionable | "Include all required fields: title, severity, estimated_fix_time" |
+
+## Iteration and improvements
+
+V1 > V2
