@@ -2,11 +2,13 @@
 
 *This section documents the content design decisions for portfolio review purposes.*
 
+
 ## Research foundation:
 
 - A mockup API gives the right balance of creativity without constraint when it comes to documentation.
 - Most teams don't have a clear visibility of their technical debt nor knowledge of how much time to fix it.
 - Technical debt is a present reality in all companies that work with coding, and its extremely important that it’s tracked and understood.
+
 
 ## Design rationale:
 
@@ -14,6 +16,7 @@
 - Severity scales beyond 5 levels tend to cause decision fatigue
 - Technical debt estimates become less accurate over time—this informed the auto-growing estimate feature
 - Authentication is a common pain point in API documentation
+
 
 ## Content Strategy Decisions:
 
@@ -27,7 +30,8 @@
 | Consistent endpoint structure | Reduces learning time across endpoints | Standard API doc pattern |
 | curl examples only | Works for all developers regardless of language | Universal compatibility |
 
-**Goals, signals and measures**
+
+## Goals, signals and measures**
 
 | **Goal** | **Measure** | **Measure** |
 | --- | --- | --- |
@@ -94,6 +98,7 @@ Tech Debt Tracker API Documentation
 Link to image diagram here.
 [Diagram for information architecture](../images/information-architecture.png)
 
+
 ## Accessibility Considerations
 
 This section documents the accessibility considerations when deciding the documentation design.  
@@ -106,9 +111,11 @@ This section documents the accessibility considerations when deciding the docume
 | Coded colours | Helps identify error and success messages  |
 |  |  |
 
+
 ## Journey Map : Developer Onboarding
 
 ![Journey Map for Developer Onboarding image of the API documentation.](../images/journey-map.png)
+
 
 ## API Workflow
 placeholder
@@ -123,6 +130,7 @@ placeholder
 | **Technically precise** | Use correct terminology: "endpoint" not "link", "parameter" not "field" (in query strings) |
 | **Helpful** | Anticipate problems: Every error shows a solution, not just the error code |
 
+
 ## Tone Variations
 
 | Context | Tone | Example |
@@ -131,6 +139,7 @@ placeholder
 | API Reference | Neutral, precise | "Returns a JSON object containing..." |
 | Troubleshooting | Supportive | "Check that your API key is correct" |
 | Errors | Clear, actionable | "Include all required fields: title, severity, estimated_fix_time" |
+
 
 ## Iteration and improvements
 
