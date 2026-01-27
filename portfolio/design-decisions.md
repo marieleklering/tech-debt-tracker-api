@@ -113,12 +113,15 @@ This section documents the accessibility considerations when deciding the docume
 
 
 ## Journey Map : Developer Onboarding
+Below is the Journey Map of the API for Developer Onboarding:
 
 ![Journey Map for Developer Onboarding image of the API documentation.](../images/journey-map.png)
 
 
 ## API Workflow
-placeholder
+The API workflow step-by-step is documented in the diagram below:
+
+![API workflow diagram.](../images/api-workflow.png)
 
 
 ## Voice Principles
