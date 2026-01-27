@@ -39,7 +39,7 @@
 
 ## Information Architecture Choices:
 
-![Information Architecture image of the API documentation.](../images/journey-map.png)
+![Information Architecture image of the API documentation.](../images/information-architecture.png)
 
 ## Accessibility Considerations
 
@@ -54,5 +54,7 @@ This section documents the accessibility considerations when deciding the docume
 |  |  |
 
 ## Journey Map : Developer Onboarding
+
+![Journey Map for Developer Onboarding image of the API documentation.](../images/journey-map.png)
 
 ## API Workflow
