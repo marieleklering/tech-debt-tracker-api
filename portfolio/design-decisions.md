@@ -1,21 +1,21 @@
-## Context and Design Decisions
+# Context and Design Decisions
 
 *This section documents the research and key findings for the Tech Debt Tracker API and why it was chosen.*
 
-**Research foundation:**
+## Research foundation:
 
 - A mockup API gives the right balance of creativity without constraint when it comes to documentation.
 - Most teams don't have a clear visibility of their technical debt nor knowledge of how much time to fix it.
 - Technical debt is a present reality in all companies that work with coding, and its extremely important that it’s tracked and understood.
 
-**Design rationale:**
+## Design rationale:
 
 - Developers generally prefer visual overviews before diving into technical details
 - Severity scales beyond 5 levels tend to cause decision fatigue
 - Technical debt estimates become less accurate over time—this informed the auto-growing estimate feature
 - Authentication is a common pain point in API documentation
 
-**Content Strategy Decisions:**
+## Content Strategy Decisions:
 
 *This section documents the API decisions and the rationale behind every statement.*
 
@@ -37,6 +37,22 @@
 | Comprehension | Users understand estimate growth concept | > 85% accuracy |
 
 
-**Information Architecture Choices:**
+## Information Architecture Choices:
 
 ![Information Architecture image of the API documentation.](../images/journey-map.png)
+
+## Accessibility Considerations
+
+This section documents the accessibility considerations when deciding the documentation design.  
+
+| **Element** | **Approach** |
+| --- | --- |
+| Error messages | Include actionable steps, not just code. |
+| Hierarchy | Semantic heading levels (H1 → H2 → H3) |
+| Code blocks | High contrast syntax highlighting; not colour-dependent |
+| Coded colours | Helps identify error and success messages  |
+|  |  |
+
+## Journey Map : Developer Onboarding
+
+## API Workflow
