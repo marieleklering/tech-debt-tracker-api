@@ -162,7 +162,7 @@ Query parameters
 
 **Example request:**
 
-```json
+```
 curl -X POST https://api.techdebttracker.io/v1/debts \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
@@ -178,8 +178,8 @@ curl -X POST https://api.techdebttracker.io/v1/debts \
 
 **Response:**
 
-```json
-**Response: 201 Created**
+```
+Response: 201 Created
 {
 
 "id": "debt_abc123",
@@ -207,7 +207,7 @@ curl -X POST https://api.techdebttracker.io/v1/debts \
 
 **Error:**
 
-```json
+```
 {
 
 "error": {
@@ -238,7 +238,7 @@ Query parameters
 
 **Example request:**
 
-```json
+```
 GET /v1/debts?severity=4&team=backend-team
 ```
 
