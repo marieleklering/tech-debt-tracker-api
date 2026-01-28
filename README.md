@@ -21,11 +21,11 @@ Read the full design decisions → [Design Decisions](./portfolio/design-decisio
 
 ## What's documented
 
-API overview and quick start guide
-Authentication
-Endpoint reference (Create, List, Update, Scoreboard)
-Troubleshooting and error handling
-FAQ
+- API overview and quick start guide
+- Authentication
+- Endpoint reference (Create, List, Update, Scoreboard)
+- Troubleshooting and error handling
+- FAQ
 
 ## Built with
 - Markdown
