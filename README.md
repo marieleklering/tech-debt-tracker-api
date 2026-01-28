@@ -3,12 +3,10 @@
 ## Tech Debt Tracker API Documentation
 API documentation for the Tech Debt Tracker which is a tool that helps development teams log, measure, and monitor technical debt.
 
-View the docs
-link here
-
 ## About this project
 This is a sample API documentation project demonstrating technical writing for developer platforms. The API is fictional but the documentation follows real-world best practices.
 
+Read the full documentation → [API Documentation](./docs/index.md)
 
 ## Design decisions
 This project includes documentation of the content design process:
@@ -19,7 +17,7 @@ Accessibility considerations
 Voice and tone guidelines
 Journey mapping
 
-Read the full design decisions → link here.
+Read the full design decisions → [Design Decisions](./portfolio/design-decisions.md)
 
 ## What's documented
 
