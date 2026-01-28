@@ -35,8 +35,8 @@ FAQ
 ## Run locally
 
 ```bash
-git clone https://github.com/yourusername/tech-debt-tracker-docs.git
-cd tech-debt-tracker-docs
+git clone https://github.com/marieleklering/tech-debt-tracker-api.git
+cd tech-debt-tracker-api
 
 # If using Jekyll
 bundle install
