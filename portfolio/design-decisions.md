@@ -2,6 +2,7 @@
 
 *This section documents the content design decisions for portfolio review purposes.*
 
+Read the full documentation → [API Documentation](./docs/index.md)
 
 ## Research foundation:
 
