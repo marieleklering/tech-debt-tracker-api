@@ -11,11 +11,11 @@ Read the full documentation → [API Documentation](./docs/index.md)
 ## Design decisions
 This project includes documentation of the content design process:
 
-Information architecture choices
-Content strategy decisions
-Accessibility considerations
-Voice and tone guidelines
-Journey mapping
+- Information architecture choices
+- Content strategy decisions
+- Accessibility considerations
+- Voice and tone guidelines
+- Journey mapping
 
 Read the full design decisions → [Design Decisions](./portfolio/design-decisions.md)
 
