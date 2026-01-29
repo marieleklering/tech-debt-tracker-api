@@ -31,19 +31,26 @@ Read the full design decisions → [Design Decisions](./portfolio/design-decisio
 - Markdown
 - GitHub Pages
 - Miro
+- Grip
 
 ## Run locally
 
+## Run locally
 ```bash
+# Clone the repo
 git clone https://github.com/marieleklering/tech-debt-tracker-api.git
+
+# Open the folder
 cd tech-debt-tracker-api
 
-# If using Jekyll
-bundle install
-bundle exec jekyll serve
+# Install grip (one-time)
+pip install grip
 
-# Then open http://localhost:4000
+# Start the server
+grip
 ```
+
+Then open http://localhost:6419
 
 ## Author
 
