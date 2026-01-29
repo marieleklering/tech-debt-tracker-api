@@ -38,7 +38,7 @@ Read the full design decisions → [Design Decisions](./portfolio/design-decisio
 
 The Tech Debt scoreboard gives details as issue name, age, severity and current estimate.
 
-```jsx
+```
 ╔════════════════════════════════════════════════════════════════════════════╗
 ║  TECH DEBT SCOREBOARD                                                      ║
 ╠════════════════════════════════════════════════════════════════════════════╣
@@ -105,7 +105,7 @@ View your debt via GET /v1/scoreboard/global to see:
 ```bash
 1. Log Debt Entry          2. Track Automatically       3. Watch Scoreboard
 
-         **↓**                          **↓**                	            **↓**
+         ↓                          ↓               	            ↓
 
 "Legacy auth system"      Estimates grow over time     See team rankings,
 
@@ -245,7 +245,7 @@ GET /v1/debts?severity=4&team=backend-team
 
 **Response:** 🟢 `200 OK`
 
-```json
+```
 
 {
 
@@ -296,7 +296,7 @@ GET /v1/debts?severity=4&team=backend-team
 
 **Error:** 🔴 `404 Not Found`
 
-```json
+```
 {
   "error": {
     "code": "NO_DEBTS_FOUND",
