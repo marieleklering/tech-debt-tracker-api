@@ -33,7 +33,6 @@ Read the full design decisions → [Design Decisions](./portfolio/design-decisio
 - Miro
 - Grip
 
-## Run locally
 
 ## Run locally
 ```bash
