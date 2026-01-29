@@ -109,7 +109,7 @@ View your debt via GET /v1/scoreboard/global to see:
 
 "Legacy auth system"      Estimates grow over time     See team rankings,
 
-40 hours, Severity 3   **→**  based on age & severity  **→**   biggest debts, recent wins
+40 hours, Severity 3   →  based on age & severity  →   biggest debts, recent wins
 ```
 
 ## **Getting Started**
@@ -322,7 +322,7 @@ Query parameters
 
 **Example request:**
 
-```bash
+```
 PUT /v1/debts/debt_abc123
 
 Authorization: Bearer sk_live_abc123xyz
@@ -338,7 +338,7 @@ Content-Type: application/json
 
 **Response:** 🟢 `200 OK`
 
-```json
+```
 {
   "id": "debt_abc123",
   "title": "Replace deprecated AuthLib",
@@ -353,7 +353,7 @@ Content-Type: application/json
 
 **Error:** 🔴 `404 Not Found`
 
-```json
+```
 {
   "error": {
     "code": "DEBT_NOT_FOUND",
@@ -370,14 +370,14 @@ Your view of the scoreboard containing information like the status, eta to fix, 
 
 **Example request:**
 
-```bash
+```
 curl https://api.techdebttracker.io/v1/scoreboard/global \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
 **Response:** 🟢 `200 OK`
 
-```json
+```
 {
   "overview": {
     "total_debt_hours": 1247,
@@ -390,7 +390,7 @@ curl https://api.techdebttracker.io/v1/scoreboard/global \
 ```
 **Error:** 🔴 `401 Unauthorized`
 
-```json
+```
 {
   "error": {
     "code": "INVALID_API_KEY",
@@ -405,14 +405,14 @@ The view of the most recent technical debt fixes.
 
 **Example request:**
 
-```bash
+```
 curl https://api.techdebttracker.io/v1/scoreboard/recent-fixes \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
 **Response:** 🟢 `200 OK`
 
-```json
+```
 {
   "recent_fixes": [
     {
@@ -435,7 +435,7 @@ curl https://api.techdebttracker.io/v1/scoreboard/recent-fixes \
 ```
 **Error:** 🔴 `401 Unauthorized`
 
-```json
+```
 {
   "error": {
     "code": "INVALID_API_KEY",
@@ -452,7 +452,7 @@ We will look at the main errors you can get when using the Technical Debt Scoreb
 
 **Error:**
 
-```bash
+```
 {
   "error": {
     "code": "INVALID_API_KEY",
@@ -471,7 +471,7 @@ We will look at the main errors you can get when using the Technical Debt Scoreb
 
 **Error:**
 
-```bash
+```
 {
   "error": {
     "code": "MISSING_REQUIRED_FIELD",
@@ -490,7 +490,7 @@ We will look at the main errors you can get when using the Technical Debt Scoreb
 
 **Error:**
 
-```json
+```
 {
   "error": {
     "code": "DEBT_NOT_FOUND",
@@ -508,7 +508,7 @@ We will look at the main errors you can get when using the Technical Debt Scoreb
 
 **Error:**
 
-```json
+```
 {
   "error": {
     "code": "RATE_LIMITED",
