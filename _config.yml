@@ -1,7 +1,0 @@
-title: Tech Debt Tracker API
-description: API documentation for tracking technical debt
-remote_theme: pages-themes/minimal@v0.2.0
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
