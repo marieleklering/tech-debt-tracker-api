@@ -8,17 +8,15 @@ Read the full design decisions → [Design Decisions](../portfolio/design-decisi
 ## Table of Contents
 
 ```bash
-1. Overview............................1
-2. Quick Visual........................1
-3. How It Works........................3
-4. Getting Started.....................4
-5. API Reference.......................5
-   - Create Debt.......................5
-   - List Debts........................7
-   - Update Debt.......................9
-   - Scoreboard.......................10
-6. Troubleshooting....................11
-7. FAQ................................12
+1. Key Features
+2. Who is this for
+3. Quick Visual
+4. How it works
+5. Getting Started
+6. Authentication
+7. API Reference
+8. Troubleshooting
+9. FAQ
 ```
 
 
