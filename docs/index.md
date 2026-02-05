@@ -523,6 +523,7 @@ We will look at the main errors you can get when using the Technical Debt Scoreb
 - Consider upgrading your plan for higher rate limits
 
 ## FAQ
+Below are the most frequent questions asked about the Tech Debt Tracker API.
 
 **Q: How is the estimate growth calculated?**
 
