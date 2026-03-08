@@ -1,7 +1,7 @@
 
 # Technical Debt Tracker API 
 
-Tech Debt Tracker is an API that helps development teams log, measure and monitor technical debt across their projects. Track your technical debt in a scoreboard in a gamifying and easy way. View your technical debt all in one place and track priorities on things like who is taking charge of it and how much time is required to complete it.
+Technical debt piles up quietly, and then all at once it's blocking everything. Tech Debt Tracker gives development teams a single place to log, prioritise, and monitor debt before it becomes a crisis. Track who owns what, how long it's been sitting there, and how much it will cost to fix, with estimates that grow automatically based on severity and age so the urgency is always visible."
 
 Read the full design decisions → [Design Decisions](../portfolio/design-decisions.md)
 
