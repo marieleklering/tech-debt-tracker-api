@@ -6,9 +6,8 @@ Read the full documentation → [API Documentation](../docs/index.md)
 
 ## Research foundation:
 
-- A mockup API gives the right balance of creativity without constraint when it comes to documentation.
-- Most teams don't have a clear visibility of their technical debt nor knowledge of how much time to fix it.
-- Technical debt is a present reality in all companies that work with coding, and its extremely important that it’s tracked and understood.
+This documentation was built on a fictional API by deliberate choice. Real-world constraints(NDAs, proprietary systems, limited scope) often prevent technical writers from showing their full range in a portfolio. A mockup removes those constraints while allowing decisions to be documented transparently from the ground up.
+The problem this API solves is drawn from direct experience across multiple engineering environments: technical debt is universally present but rarely tracked with any visibility. Teams often know debt exists but have no shared language for prioritising it, no clear ownership, and no way to communicate its cost to stakeholders. Those gaps informed every design decision in this documentation.
 
 
 ## Design rationale:
