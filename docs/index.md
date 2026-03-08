@@ -143,7 +143,7 @@ curl https://api.techdebttracker.io/v1/scoreboard/global \
 
 ## API Reference
 
-### **Create Debt Management API:**
+### **Log a new debt entry:**
 
 Create a technical debt entry.
 
@@ -220,7 +220,7 @@ curl -X POST https://api.techdebttracker.io/v1/debts \
 }
 ```
 
-### **Get Debt Management API:**
+### **Find and filter debt entries:**
 
 List your technical debt entries to find more information about severity, team and status.
 
@@ -303,7 +303,7 @@ GET /v1/debts?severity=4&team=backend-team
 }
 ```
 
-### **Update Debt Management API:**
+### **Mark a debt entry as resolved:**
 
 Update technical debt to “resolved”.
 
@@ -311,12 +311,11 @@ Update technical debt to “resolved”.
 
 Query parameters
 
-| **parameter** | type | **description** |
-| --- | --- | --- |
-| category | string | Filter by category (e.g., "security", "legacy-code"). Optional. |
-| severity | integer | Filter by severity level (1-5). Optional. |
-| team | string | Filter by team name (e.g., "backend-team"). Optional. |
-| status | string | Filter by status: "active" or "resolved". Optional. |
+| **Parameter** | **Type** | **Required** | **Description** |
+| --- | --- | --- | --- |
+| status | string | Yes | Update debt status. Accepted value: "resolved" |
+| resolved_by | string | No | Username of person resolving the debt |
+| resolution_notes | string | No | Notes on how the debt was resolved |
 
 **Example request:**
 
@@ -360,7 +359,7 @@ Content-Type: application/json
 }
 ```
 
-### **List Scoreboard API:**
+### **View the scoreboard:**
 
 Your view of the scoreboard containing information like the status, eta to fix, category and team of the technical debt registered.
 
