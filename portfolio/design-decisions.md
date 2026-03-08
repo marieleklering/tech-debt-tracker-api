@@ -10,12 +10,19 @@ This documentation was built on a fictional API by deliberate choice. Real-world
 The problem this API solves is drawn from direct experience across multiple engineering environments: technical debt is universally present but rarely tracked with any visibility. Teams often know debt exists but have no shared language for prioritising it, no clear ownership, and no way to communicate its cost to stakeholders. Those gaps informed every design decision in this documentation.
 
 
-## Design rationale:
+## Design Rationale
 
-- Developers generally prefer visual overviews before diving into technical details
-- Severity scales beyond 5 levels tend to cause decision fatigue
-- Technical debt estimates become less accurate over time—this informed the auto-growing estimate feature
-- Authentication is a common pain point in API documentation
+**Developers prefer visual overviews before technical details**
+Research into developer documentation UX consistently shows that first impressions on API documentation pages matter, and that visual overviews help users immediately see where to start. The Quick Visual scoreboard was placed early for this reason, before any endpoint reference, the reader sees what they're building toward.
+
+**Severity scale limited to 1–5**
+Scales beyond five levels introduce decision paralysis when teams need to triage quickly. Five levels map naturally to the urgency vocabulary most engineering teams already use, from minor housekeeping to production-blocking failures, without requiring a reference guide to interpret.
+
+**Auto-growing estimates based on age and severity**
+Technical debt doesn't remain static as teams implement more quick fixes, the codebase becomes increasingly difficult to understand, making it harder to fix bugs or add features. Static estimates misrepresent this reality. The auto-growth mechanic makes the compounding cost visible rather than hiding it behind a number that never changes.
+
+**Authentication documented with dedicated troubleshooting**
+Auth errors are among the most common friction points developers hit when first integrating an API. Surfacing auth troubleshooting prominently(rather than burying it in a generic error section) reduces the time to first successful call, which is the most critical moment in developer onboarding.
 
 
 ## Content Strategy Decisions:
