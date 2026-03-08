@@ -31,11 +31,11 @@ Auth errors are among the most common friction points developers hit when first 
 
 | **Decision** | **Rationale** | **Evidence** |
 | --- | --- | --- |
-| Severity scale limits 1-5 | A range of numbers bigger than that causes analysis paralysis.  | Industry best practice |
-| Growing estimate time based on severity and date | The older the technical debt, the harder it is to fix it.  | Common developer experience |
-| Quick Visual section placed early | Developers want to see value before reading details | Documentation best practice |
-| Consistent endpoint structure | Reduces learning time across endpoints | Standard API doc pattern |
-| curl examples only | Works for all developers regardless of language | Universal compatibility |
+| Severity scale limits 1–5 | Five levels map to the urgency vocabulary most engineering teams already use, from minor housekeeping to production-blocking failures, without requiring a reference guide to interpret. | UX research shows 5-point scales offer the optimal balance between granularity and decision speed. Scales beyond 7 points increase cognitive load without meaningful gain in precision. |
+| Growing estimate based on severity and age | Static estimates misrepresent the compounding reality of technical debt. Making growth visible keeps urgency honest. | Industry data shows teams with TDR above 10% face significant velocity impact. Debt that isn't measured doesn't get prioritised. |
+| Quick Visual section placed early | Readers decide whether a doc is worth their time in the first scroll. Showing the scoreboard before any endpoint reference lets the product speak before the reference material begins. | Developer documentation research consistently shows visual overviews on landing pages help users immediately understand where to start. |
+| Consistent endpoint structure | Reduces the learning curve across endpoints. Once a developer reads one, they know what to expect from all others. | Stripe and Twilio, consistently cited as best-in-class API docs, both use rigid repeatable endpoint structure as a core design principle. |
+| curl examples only | Works for every developer regardless of language, stack, or tooling. | Universal compatibility. curl is available on all major platforms and requires no SDK installation. |
 
 
 ## Goals, signals and measures
